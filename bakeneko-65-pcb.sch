@@ -223,26 +223,14 @@ F 3 "" H 10750 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Power_Protection:USBLC6-2SC6 U1
-U 1 1 5F25444E
-P 1350 6500
-F 0 "U1" V 700 6450 50  0000 L CNN
-F 1 "USBLC6-2SC6" V 800 6250 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 1350 6000 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 1550 6850 50  0001 C CNN
-F 4 "C7519" H 1350 6500 50  0001 C CNN "LCSC Part #"
-	1    1350 6500
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR018
 U 1 1 5F256D2D
-P 950 6500
-F 0 "#PWR018" H 950 6250 50  0001 C CNN
-F 1 "GND" V 955 6372 50  0000 R CNN
-F 2 "" H 950 6500 50  0001 C CNN
-F 3 "" H 950 6500 50  0001 C CNN
-	1    950  6500
+P 1450 6050
+F 0 "#PWR018" H 1450 5800 50  0001 C CNN
+F 1 "GND" V 1455 5922 50  0000 R CNN
+F 2 "" H 1450 6050 50  0001 C CNN
+F 3 "" H 1450 6050 50  0001 C CNN
+	1    1450 6050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -285,18 +273,6 @@ F 4 "C17561" H 2900 6550 50  0001 C CNN "LCSC Part #"
 	1    2900 6550
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2750 6450 2100 6450
-Wire Wire Line
-	2100 6450 2100 6100
-Wire Wire Line
-	2100 6100 1450 6100
-Wire Wire Line
-	2750 6550 2100 6550
-Wire Wire Line
-	2100 6550 2100 6900
-Wire Wire Line
-	2100 6900 1450 6900
 $Comp
 L power:VBUS #PWR08
 U 1 1 5F275D18
@@ -322,13 +298,13 @@ $EndComp
 $Comp
 L power:VBUS #PWR019
 U 1 1 5F276E32
-P 1750 6500
-F 0 "#PWR019" H 1750 6350 50  0001 C CNN
-F 1 "VBUS" V 1765 6628 50  0000 L CNN
-F 2 "" H 1750 6500 50  0001 C CNN
-F 3 "" H 1750 6500 50  0001 C CNN
-	1    1750 6500
-	0    1    1    0   
+P 1450 6850
+F 0 "#PWR019" H 1450 6700 50  0001 C CNN
+F 1 "VBUS" V 1465 6978 50  0000 L CNN
+F 2 "" H 1450 6850 50  0001 C CNN
+F 3 "" H 1450 6850 50  0001 C CNN
+	1    1450 6850
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:VBUS #PWR06
@@ -363,14 +339,10 @@ F 3 "" H 5100 1350 50  0001 C CNN
 	1    5100 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 850  6100 0    50   Input ~ 0
+Text GLabel 1050 6350 0    50   Input ~ 0
 D+
-Text GLabel 850  6900 0    50   Input ~ 0
+Text GLabel 1850 6350 2    50   Input ~ 0
 D-
-Wire Wire Line
-	850  6100 1250 6100
-Wire Wire Line
-	1250 6900 850  6900
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5F27B00D
@@ -2823,4 +2795,28 @@ Connection ~ 11600 8850
 Wire Wire Line
 	12100 8850 12000 8850
 Connection ~ 12000 8850
+$Comp
+L Power_Protection:USBLC6-2SC6 U1
+U 1 1 5F25444E
+P 1450 6450
+F 0 "U1" H 1400 7000 50  0000 L CNN
+F 1 "USBLC6-2SC6" H 1200 7100 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 1450 5950 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 1650 6800 50  0001 C CNN
+F 4 "C7519" H 1450 6450 50  0001 C CNN "LCSC Part #"
+	1    1450 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 6550 2750 6550
+Wire Wire Line
+	1050 6550 850  6550
+Wire Wire Line
+	850  6550 850  5950
+Wire Wire Line
+	850  5950 2050 5950
+Wire Wire Line
+	2050 5950 2050 6450
+Wire Wire Line
+	2050 6450 2750 6450
 $EndSCHEMATC
