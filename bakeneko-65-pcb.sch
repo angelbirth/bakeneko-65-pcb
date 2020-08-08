@@ -117,34 +117,20 @@ F 4 "C49678" H 5900 1750 50  0001 C CNN "LCSC Part #"
 $EndComp
 $Comp
 L Device:C C4
-U 1 1 5F24DABA
+U 1 1 5F24DC72
 P 6300 1750
 F 0 "C4" H 6415 1796 50  0000 L CNN
-F 1 "0.1u" H 6415 1705 50  0000 L CNN
+F 1 "10u" H 6415 1705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6338 1600 50  0001 C CNN
 F 3 "~" H 6300 1750 50  0001 C CNN
-F 4 "C49678" H 6300 1750 50  0001 C CNN "LCSC Part #"
+F 4 "C15850" H 6300 1750 50  0001 C CNN "LCSC Part #"
 	1    6300 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C5
-U 1 1 5F24DC72
-P 6700 1750
-F 0 "C5" H 6815 1796 50  0000 L CNN
-F 1 "4.7u" H 6815 1705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6738 1600 50  0001 C CNN
-F 3 "~" H 6700 1750 50  0001 C CNN
-F 4 "C1779" H 6700 1750 50  0001 C CNN "LCSC Part #"
-	1    6700 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5100 1350 5100 1450
 Wire Wire Line
 	5100 1450 5500 1450
-Wire Wire Line
-	6700 1450 6700 1600
 Connection ~ 5100 1450
 Wire Wire Line
 	5100 1450 5100 1600
@@ -152,21 +138,11 @@ Wire Wire Line
 	5100 1900 5100 2050
 Wire Wire Line
 	5100 2050 5500 2050
-Wire Wire Line
-	6700 2050 6700 1900
 Connection ~ 5100 2050
 Wire Wire Line
 	5100 2050 5100 2200
 Wire Wire Line
-	6300 1900 6300 2050
-Connection ~ 6300 2050
-Wire Wire Line
-	6300 2050 6700 2050
-Wire Wire Line
 	5900 1900 5900 2050
-Connection ~ 5900 2050
-Wire Wire Line
-	5900 2050 6300 2050
 Wire Wire Line
 	5500 1900 5500 2050
 Connection ~ 5500 2050
@@ -179,14 +155,6 @@ Wire Wire Line
 	5500 1450 5900 1450
 Wire Wire Line
 	5900 1600 5900 1450
-Connection ~ 5900 1450
-Wire Wire Line
-	5900 1450 6300 1450
-Wire Wire Line
-	6300 1600 6300 1450
-Connection ~ 6300 1450
-Wire Wire Line
-	6300 1450 6700 1450
 $Comp
 L Device:Polyfuse F1
 U 1 1 5F2505EB
@@ -223,10 +191,10 @@ F 3 "" H 10750 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR018
+L power:GND #PWR017
 U 1 1 5F256D2D
 P 1450 6050
-F 0 "#PWR018" H 1450 5800 50  0001 C CNN
+F 0 "#PWR017" H 1450 5800 50  0001 C CNN
 F 1 "GND" V 1455 5922 50  0000 R CNN
 F 2 "" H 1450 6050 50  0001 C CNN
 F 3 "" H 1450 6050 50  0001 C CNN
@@ -296,10 +264,10 @@ F 3 "" H 2350 1600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:VBUS #PWR019
+L power:VBUS #PWR020
 U 1 1 5F276E32
 P 1450 6850
-F 0 "#PWR019" H 1450 6700 50  0001 C CNN
+F 0 "#PWR020" H 1450 6700 50  0001 C CNN
 F 1 "VBUS" V 1465 6978 50  0000 L CNN
 F 2 "" H 1450 6850 50  0001 C CNN
 F 3 "" H 1450 6850 50  0001 C CNN
@@ -408,10 +376,10 @@ Text GLabel 3050 5850 0    50   Input ~ 0
 XTAL2
 NoConn ~ 3050 6050
 $Comp
-L power:VCC #PWR017
+L power:VCC #PWR018
 U 1 1 5F28483D
 P 3050 6250
-F 0 "#PWR017" H 3050 6100 50  0001 C CNN
+F 0 "#PWR018" H 3050 6100 50  0001 C CNN
 F 1 "VCC" V 3065 6377 50  0000 L CNN
 F 2 "" H 3050 6250 50  0001 C CNN
 F 3 "" H 3050 6250 50  0001 C CNN
@@ -419,10 +387,10 @@ F 3 "" H 3050 6250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C8
+L Device:C C7
 U 1 1 5F284FC4
 P 2650 6750
-F 0 "C8" V 2800 6750 50  0000 C CNN
+F 0 "C7" V 2800 6750 50  0000 C CNN
 F 1 "1u" V 2900 6750 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2688 6600 50  0001 C CNN
 F 3 "~" H 2650 6750 50  0001 C CNN
@@ -431,10 +399,10 @@ F 4 "C28323" H 2650 6750 50  0001 C CNN "LCSC Part #"
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR020
+L power:GND #PWR019
 U 1 1 5F286A59
 P 2500 6750
-F 0 "#PWR020" H 2500 6500 50  0001 C CNN
+F 0 "#PWR019" H 2500 6500 50  0001 C CNN
 F 1 "GND" V 2505 6622 50  0000 R CNN
 F 2 "" H 2500 6750 50  0001 C CNN
 F 3 "" H 2500 6750 50  0001 C CNN
@@ -540,10 +508,10 @@ $EndComp
 Text GLabel 2200 3200 0    50   Input ~ 0
 XTAL2
 $Comp
-L Device:C C6
+L Device:C C5
 U 1 1 5F297A61
 P 3000 3200
-F 0 "C6" V 2748 3200 50  0000 C CNN
+F 0 "C5" V 2748 3200 50  0000 C CNN
 F 1 "22p" V 2839 3200 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3038 3050 50  0001 C CNN
 F 3 "~" H 3000 3200 50  0001 C CNN
@@ -552,10 +520,10 @@ F 4 "C1804" H 3000 3200 50  0001 C CNN "LCSC Part #"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C7
+L Device:C C6
 U 1 1 5F2984ED
 P 3000 3850
-F 0 "C7" V 2748 3850 50  0000 C CNN
+F 0 "C6" V 2748 3850 50  0000 C CNN
 F 1 "22p" V 2839 3850 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3038 3700 50  0001 C CNN
 F 3 "~" H 3000 3850 50  0001 C CNN
@@ -963,7 +931,7 @@ F 1 "1.5u" H 6850 6894 50  0000 C CNN
 F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_PCB" H 6850 6750 50  0001 C CNN
 F 3 "~" H 6850 6750 50  0001 C CNN
 	1    6850 6750
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:D D17
@@ -2739,54 +2707,46 @@ Text GLabel 7200 5450 2    50   Input ~ 0
 COL1
 Text GLabel 6650 5450 2    50   Input ~ 0
 COL0
-Text GLabel 4250 6750 2    50   Input ~ 0
+Text GLabel 4700 7150 2    50   Input ~ 0
 COL15
-Text GLabel 4250 6850 2    50   Input ~ 0
+Text GLabel 4650 6850 2    50   Input ~ 0
 COL14
-Text GLabel 4250 6950 2    50   Input ~ 0
+Text GLabel 4600 6950 2    50   Input ~ 0
 COL13
-Text GLabel 4250 7150 2    50   Input ~ 0
+Text GLabel 4400 7150 2    50   Input ~ 0
 COL12
-Text GLabel 4250 7050 2    50   Input ~ 0
+Text GLabel 4700 7000 2    50   Input ~ 0
 COL11
-Text GLabel 4250 7250 2    50   Input ~ 0
+Text GLabel 4400 7250 2    50   Input ~ 0
 COL10
-Text GLabel 4250 7350 2    50   Input ~ 0
+Text GLabel 4350 7350 2    50   Input ~ 0
 COL9
-Text GLabel 4250 5850 2    50   Input ~ 0
+Text GLabel 4700 5900 2    50   Input ~ 0
 COL8
-Text GLabel 4250 5950 2    50   Input ~ 0
+Text GLabel 4800 6050 2    50   Input ~ 0
 COL7
-Text GLabel 4250 6050 2    50   Input ~ 0
+Text GLabel 4850 6150 2    50   Input ~ 0
 COL6
-Text GLabel 4250 6350 2    50   Input ~ 0
+Text GLabel 4650 6350 2    50   Input ~ 0
 COL5
-Text GLabel 4250 6450 2    50   Input ~ 0
+Text GLabel 4450 6450 2    50   Input ~ 0
 COL4
-Text GLabel 4250 8250 2    50   Input ~ 0
+Text GLabel 4700 8450 2    50   Input ~ 0
 COL3
-Text GLabel 4250 8150 2    50   Input ~ 0
+Text GLabel 4650 8250 2    50   Input ~ 0
 COL2
-Text GLabel 4250 8350 2    50   Input ~ 0
-COL1
-Text GLabel 4250 8050 2    50   Input ~ 0
-COL0
 Text GLabel 4250 5450 2    50   Input ~ 0
-ROW0
-Text GLabel 4850 5550 2    50   Input ~ 0
-ROW1
-Text GLabel 4850 5650 2    50   Input ~ 0
-ROW2
-Text GLabel 4850 5750 2    50   Input ~ 0
-ROW3
+COL1
+Text GLabel 4250 7850 2    50   Input ~ 0
+COL0
 Text GLabel 4250 6150 2    50   Input ~ 0
+ROW1
+Text GLabel 4800 6750 2    50   Input ~ 0
+ROW2
+Text GLabel 4700 8000 2    50   Input ~ 0
+ROW3
+Text GLabel 4600 7850 2    50   Input ~ 0
 ROW4
-Text GLabel 4850 5550 0    50   Input ~ 0
-SCK
-Text GLabel 4850 5650 0    50   Input ~ 0
-MOSI
-Text GLabel 4850 5750 0    50   Input ~ 0
-MISO
 Wire Wire Line
 	13100 7750 14200 7750
 Wire Wire Line
@@ -2819,4 +2779,16 @@ Wire Wire Line
 	2050 5950 2050 6450
 Wire Wire Line
 	2050 6450 2750 6450
+Text GLabel 4250 7650 2    50   Input ~ 0
+ROW0
+Wire Wire Line
+	6300 1600 6300 1450
+Wire Wire Line
+	6300 1450 5900 1450
+Connection ~ 5900 1450
+Wire Wire Line
+	5900 2050 6300 2050
+Wire Wire Line
+	6300 2050 6300 1900
+Connection ~ 5900 2050
 $EndSCHEMATC
