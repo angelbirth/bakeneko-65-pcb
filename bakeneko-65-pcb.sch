@@ -1942,7 +1942,7 @@ U 1 1 5F2FA59F
 P 10150 8850
 F 0 "MX65" H 10150 9085 50  0000 C CNN
 F 1 "6.25u" H 10150 8994 50  0000 C CNN
-F 2 "bakeneko-65-pcb:SW_Cherry_MX_6.25u_PCB_Reversed_Stabilizer" H 10150 8850 50  0001 C CNN
+F 2 "bakeneko:SW_Cherry_MX_6.25u_PCB_Reversed_Stabilizer" H 10150 8850 50  0001 C CNN
 F 3 "~" H 10150 8850 50  0001 C CNN
 	1    10150 8850
 	1    0    0    -1  
