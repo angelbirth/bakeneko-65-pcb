@@ -7407,8 +7407,8 @@
     )
   )
 
-  (gr_text "Bakeneko 65 v1.0" (at -0.35 30.34625) (layer B.SilkS)
-    (effects (font (size 1 1) (thickness 0.25)) (justify mirror))
+  (gr_text "Bakeneko 65 v1.0" (at 261.25 88.2) (layer B.SilkS)
+    (effects (font (size 1 1) (thickness 0.15) italic) (justify mirror))
   )
   (gr_line (start -11.54 88.28) (end -11.54 -1.92) (layer Edge.Cuts) (width 0.2))
   (gr_curve (pts (xy 4.210001 90.28) (xy 3.868603 88.815873) (xy 2.563404 87.780002) (xy 1.060002 87.780002)) (layer Edge.Cuts) (width 0.2))
