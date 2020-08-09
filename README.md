@@ -1,5 +1,7 @@
 # Bakeneko 65 PCB
 
+A 65% O-ring gasket mount keyboard.
+
 ## Features
  * Compatible with [Unified Daughterboard](https://github.com/ai03-2725/Unified-Daughterboard)
  * QMK Firmware
