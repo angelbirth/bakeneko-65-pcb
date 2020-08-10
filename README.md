@@ -19,6 +19,11 @@ A 65% O-ring gasket mount keyboard.
 ## Case
  * [Aluminum case](https://github.com/kkatano/bakeneko-65-case)
 
+## Plate
+
+ * [FR4 plate](https://github.com/kkatano/bakeneko-65-fr4-full-plate)
+ * [FR4 half plate](https://github.com/kkatano/bakeneko-65-fr4-half-plate)
+
 ## BOM
 
 TBU

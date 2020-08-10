@@ -901,17 +901,6 @@ F 4 "C81598" H 15300 6200 50  0001 C CNN "LCSC Part #"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_SPST MX18
-U 1 1 5F2D2627
-P 6850 6750
-F 0 "MX18" H 6850 6985 50  0000 C CNN
-F 1 "1.5u" H 6850 6894 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_PCB" H 6850 6750 50  0001 C CNN
-F 3 "~" H 6850 6750 50  0001 C CNN
-	1    6850 6750
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:D D17
 U 1 1 5F2D262D
 P 7050 6900
@@ -2295,11 +2284,6 @@ Wire Wire Line
 Wire Wire Line
 	6650 5450 6650 6050
 Connection ~ 6650 6050
-Wire Wire Line
-	6650 6050 6650 6750
-Connection ~ 6650 6750
-Wire Wire Line
-	6650 6750 6650 7450
 Connection ~ 6650 7450
 Wire Wire Line
 	6650 7450 6650 7850
@@ -2792,4 +2776,20 @@ F 3 "" H 10900 1850 50  0001 C CNN
 	1    10900 1850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Switch:SW_SPST MX18
+U 1 1 5F325A2A
+P 6850 6750
+F 0 "MX18" H 6850 6985 50  0000 C CNN
+F 1 "1.5u" H 6850 6894 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_PCB" H 6850 6750 50  0001 C CNN
+F 3 "~" H 6850 6750 50  0001 C CNN
+	1    6850 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 6050 6650 6750
+Connection ~ 6650 6750
+Wire Wire Line
+	6650 6750 6650 7450
 $EndSCHEMATC
